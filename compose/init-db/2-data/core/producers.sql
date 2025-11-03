@@ -1,0 +1,21 @@
+INSERT INTO wine.producers (producer_name, producer_website_url, created_at, updated_at) 
+VALUES 
+  ('António Maçanita', 'https://www.antoniomacanita.com', '2025-08-11T23:14', '2025-08-11T23:14'),
+  ('Arvad', 'https://www.arvad.pt', '2025-08-29T19:11', '2025-08-29T19:11'),
+  ('atlasland', 'https://www.atlaslandwines.com', '2025-08-31T21:31', '2025-08-31T21:34'),
+  ('Casa da Passarella', 'https://casadapassarella.pt', '2025-08-28T23:39', '2025-08-28T23:39'),
+  ('Dona Berta', 'https://www.donaberta.pt', '2025-08-25T19:55', '2025-08-25T19:55'),
+  ('Entre Pedras', 'https://entre-pedras.com', '2025-08-11T23:15', '2025-08-11T23:15'),
+  ('Herdade da Cardeira', 'https://cardeira.pt', '2025-08-11T23:14', '2025-08-11T23:14'),
+  ('Kopke 1638', 'https://kopke1638.com', '2025-08-31T22:50', '2025-08-31T22:50'),
+  ('Mãos & Irmãos', 'https://maoseirmaos.com', '2025-08-11T23:14', '2025-08-11T23:14'),
+  ('Miguel Louro Wines', null, '2025-08-11T23:14', '2025-08-11T23:14'),
+  ('Mira do Ó', 'https://miradoovinhos.com', '2025-08-28T18:59', '2025-08-28T18:59'),
+  ('Morgado do Quintão', 'https://www.morgadodoquintao.pt', '2025-08-11T23:14', '2025-08-11T23:14'),
+  ('Natus Vini', 'https://natusvini.pt', '2025-08-31T03:11', '2025-08-31T03:11'),
+  ('Quinta da Perdonda', null, '2025-08-11T23:14', '2025-08-11T23:14'),
+  ('Quinta das Marias', 'https://www.quintadasmarias.com', '2025-08-11T23:14', '2025-08-11T23:14'),
+  ('Quinta de Santiago', 'https://quintadesantiago.pt', '2025-08-28T20:37', '2025-08-28T20:38'),
+  ('Quinta de Santiago x Mira do Ó', 'https://miradoovinhos.com', '2025-08-25T23:57', '2025-08-25T23:57'),
+  ('Quinta Nova de Nossa Senhora do Carmo', 'https://www.quintanova.com', '2025-08-25T19:19', '2025-08-25T19:19'),
+  ('Vinevinu', 'https://vinevinu.com', '2025-09-01T01:05', '2025-09-01T01:05');

@@ -1,0 +1,55 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+    container_name: postgres_db
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+    ports:
+      - "${DB_PORT}:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+      - ./init-db:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+    networks:
+      - pg_network
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pg_admin
+    restart: unless-stopped
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL}
+      - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
+      - PGADMIN_CONFIG_SERVER_MODE=False
+      - PGADMIN_CONFIG_MASTER_PASSWORD_REQUIRED=False
+    ports:
+      - "5050:80"
+    volumes:
+
+      - pgadmin_data:/var/lib/pgadmin
+      - ./servers.json:/pgadmin4/servers.json
+    networks:
+      - pg_network
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+networks:
+  pg_network:
+    driver: bridge
+
+volumes:
+  pg_data:
+    name: ragdb_pgdata
+  pgadmin_data:
+    name: ragdb_pgadmin_data

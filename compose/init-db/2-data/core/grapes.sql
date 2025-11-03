@@ -1,0 +1,32 @@
+INSERT INTO wine.grapes (grape_name, grape_color, grape_species, grape_origin, created_at, updated_at) 
+VALUES 
+  ('Alvarinho', 'Branca', 'Vitis vinifera', 'Portugal', '2025-08-10T23:47', '2025-08-10T23:47'),
+  ('Alvarelhão', 'Tinta', 'Vitis vinifera', 'Portugal', '2025-08-25T23:43', '2025-08-25T23:43'),
+  ('Alfrocheiro', 'Tinta', 'Vitis vinifera', 'Portugal', '2025-08-28T22:13', '2025-08-28T22:13'),
+  ('Arinto', 'Branca', 'Vitis vinifera', 'Portugal', '2025-08-10T23:47', '2025-08-10T23:47'),
+  ('Arinto dos Açores', null, null, null, '2025-08-11T23:00', '2025-08-11T23:00'),
+  ('Bastardo', 'Tinta', 'Vitis vinifera', null, '2025-08-31T21:52', '2025-08-31T21:52'),
+  ('Borraçal', 'Tinta', 'Vitis vinifera', 'Portugal', '2025-08-25T23:45', '2025-08-25T23:45'),
+  ('Caínho', 'Branca', 'Vitis vinifera', 'Portugal', '2025-08-25T23:47', '2025-08-25T23:47'),
+  ('Castelão', 'Tinta', 'Vitis vinifera', 'Portugal', '2025-08-31T03:21', '2025-08-31T03:22'),
+  ('Encruzado', 'Branca', 'Vitis vinifera', 'Portugal', '2025-08-10T23:47', '2025-08-10T23:47'),
+  ('Jaen', 'Tinta', 'Vitis vinifera', null, '2025-08-28T22:16', '2025-08-28T22:16'),
+  ('Negra Mole', 'Tinta', 'Vitis vinifera', 'Portugal', '2025-08-10T23:47', '2025-08-10T23:47'),
+  ('Pedral', 'Tinta', 'Vitis vinifera', 'Portugal', '2025-08-25T23:48', '2025-08-25T23:49'),
+  ('Rabigato', 'Branca', 'Vitis vinifera', 'Portugal', '2025-08-10T23:47', '2025-08-10T23:48'),
+  ('Roupeiro', 'Branca', 'Vitis vinifera', 'Portugal', '2025-08-10T23:48', '2025-08-10T23:48'),
+  ('Sousão', 'Tinta', 'Vitis vinifera', 'Portugal', '2025-08-10T23:48', '2025-08-10T23:48'),
+  ('Terrantez do Pico', null, null, null, '2025-08-11T23:02', '2025-08-11T23:02'),
+  ('Tinta Amarela', 'Tinta', 'Vitis vinifera', 'Portugal', '2025-08-25T19:15', '2025-08-25T19:15'),
+  ('Tinta Roriz', 'Tinta', 'Vitis vinifera', 'Portugal', '2025-08-10T23:48', '2025-08-10T23:48'),
+  ('Tinto Cão', 'Tinta', 'Vitis vinifera', 'Portugal', '2025-08-31T22:47', '2025-08-31T22:47'),
+  ('Touriga Nacional', 'Tinta', 'Vitis vinifera', 'Portugal', '2025-08-10T23:48', '2025-08-10T23:48'),
+  ('Trincadeira', 'Tinta', 'Vitis vinifera', 'Portugal', '2025-08-31T03:23', '2025-08-31T03:23'),
+  ('Verdelho', 'Branca', 'Vitis vinifera', 'Portugal', '2025-08-10T23:49', '2025-08-10T23:49'), 
+  ('Vinhão', 'Tinta', 'Vitis vinifera', 'Portugal', '2025-08-25T23:42', '2025-08-25T23:42'), 
+  -- Outros
+  ('Field Blend', null, null, null, '2025-08-31T21:50', '2025-08-31T21:50'),
+  ('Vinhas Velhas', null, null, null, '2025-08-10T23:49', '2025-08-10T23:49'),
+  ('Vinha Centenária', null, null, null, '2025-08-25T19:50', '2025-08-25T19:50'),
+  ('Mistura de castas tradicionais do Douro', null, null, null, '2025-08-10T23:51', '2025-08-10T23:51');
+
